@@ -200,7 +200,7 @@ const SoftwareStack = () => {
           ref={containerRef} 
           onMouseMove={handleMouseMove}
           onTouchMove={handleTouchMove}
-          className="relative w-full h-[550px] sm:h-[650px] border border-slate-300/50 dark:border-slate-700/50 rounded-[3rem] bg-gradient-to-b from-white/30 to-slate-100/30 dark:from-slate-800/20 dark:to-slate-900/40 backdrop-blur-xl overflow-hidden shadow-[inset_0_0_50px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_0_50px_rgba(0,0,0,0.5)] group touch-none"
+          className="relative w-full h-[450px] sm:h-[650px] border border-slate-300/50 dark:border-slate-700/50 rounded-[3rem] bg-gradient-to-b from-white/30 to-slate-100/30 dark:from-slate-800/20 dark:to-slate-900/40 backdrop-blur-xl overflow-hidden shadow-[inset_0_0_50px_rgba(0,0,0,0.05)] dark:shadow-[inset_0_0_50px_rgba(0,0,0,0.5)] group touch-pan-y"
         >
           {/* Grid lines background untuk efek lab/ruang */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>

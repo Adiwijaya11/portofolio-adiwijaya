@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 const CustomCursor = () => {
   useEffect(() => {
-    const isTouchDevice = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches;
-    if (isTouchDevice) return;
+    const isMobile = typeof window !== 'undefined' && (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 1024);
+    if (isMobile) return;
     document.body.style.cursor = 'none';
 
     let dot: HTMLDivElement | null = null;

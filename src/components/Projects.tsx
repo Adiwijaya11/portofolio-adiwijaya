@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import topupImg from '../assets/topup.png';
 import resepImg from '../assets/resep.png';
 import elektronikImg from '../assets/elektronik.png';
+import exploreBaliImg from '../assets/exlplore-bali.png';
 
 interface Project {
   id: number;
@@ -16,6 +17,17 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 4,
+    title: 'Explore Bali',
+    category: 'Travel & Tourism',
+    description: 'Platform eksplorasi wisata Bali yang menyajikan informasi destinasi, budaya, dan kuliner terbaik di Pulau Dewata. Didesain dengan antarmuka yang modern, responsif, dan interaktif menggunakan React.',
+    tech: ['React', 'JavaScript', 'TailwindCSS', 'Framer Motion'],
+    color: 'from-blue-500 to-cyan-500',
+    image: exploreBaliImg,
+    link: '#',
+    github: 'https://github.com/Adiwijaya11/Adiwijaya11'
+  },
   {
     id: 1,
     title: 'GameTopup Portal',
@@ -96,8 +108,8 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Grid Proyek: 1 col mobile, 2 col sm, 3 col md+ */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+        {/* Grid Proyek: 1 col mobile, 2 col md+ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {projects.map((project, index) => (
             <div
               key={project.id}
@@ -105,31 +117,31 @@ const Projects = () => {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Thumbnail */}
-              <div className="relative h-44 sm:h-56 md:h-48 lg:h-56 w-full overflow-hidden bg-slate-900 cursor-pointer" onClick={() => setSelectedProject(project)}>
+              <div className="relative aspect-video w-full overflow-hidden bg-slate-900 cursor-pointer" onClick={() => setSelectedProject(project)}>
                 {project.image ? (
                   <img
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s] ease-out opacity-90"
                   />
                 ) : (
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-80`}></div>
                 )}
                 <div className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent pointer-events-none"></div>
 
-                <div className={`absolute top-4 left-4 px-3 py-1 bg-gradient-to-r ${project.color} shadow-lg rounded-full text-white text-xs font-bold tracking-wider uppercase`}>
+                <div className={`absolute top-4 left-4 px-3 py-1 bg-gradient-to-r ${project.color} shadow-lg rounded-full text-white text-[10px] sm:text-xs font-bold tracking-wider uppercase`}>
                   {project.category}
                 </div>
 
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h4 className="text-lg sm:text-xl md:text-lg lg:text-xl font-extrabold text-white group-hover:text-amber-400 transition-colors duration-300">{project.title}</h4>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h4 className="text-xl sm:text-2xl font-extrabold text-white group-hover:text-amber-400 transition-colors duration-300 drop-shadow-lg">{project.title}</h4>
                 </div>
               </div>
 
               {/* Konten */}
-              <div className="p-4 sm:p-6 flex-1 flex flex-col">
+              <div className="p-6 sm:p-8 flex-1 flex flex-col">
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 flex-1 line-clamp-3">
                   {project.description}
                 </p>
