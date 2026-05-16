@@ -87,7 +87,7 @@ const Hero = () => {
               <a href="#projects" className="px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold hover:scale-105 transition-transform duration-300 shadow-xl text-sm sm:text-base text-center">
                 Lihat Karya Saya
               </a>
-              <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" download="CV_Adi_Wijaya.pdf" className="px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-slate-200 dark:border-slate-800 font-bold text-slate-700 dark:text-white hover:border-slate-900 dark:hover:border-white transition-all duration-300 text-sm sm:text-base text-center">
+              <a href={`${import.meta.env.BASE_URL}cv.pdf`} target="_blank" rel="noopener noreferrer" download="CV_Adi_Wijaya.pdf" className="px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-slate-200 dark:border-slate-800 font-bold text-slate-700 dark:text-white hover:border-slate-900 dark:hover:border-white transition-all duration-300 text-sm sm:text-base text-center">
                 Unduh CV
               </a>
             </div>
