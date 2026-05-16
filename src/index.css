@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ===== GLOBAL ===== */
+html { scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body { -ms-overflow-style: none; scrollbar-width: none; overflow-x: hidden; }
+::-webkit-scrollbar { display: none; }
+
+/* ===========================
+   SCROLL REVEAL SYSTEM
+   - Elemen mulai hidden
+   - .revealed = tampil
+=========================== */
+
+.sr-hidden {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 750ms;
+  will-change: opacity, transform;
+}
+
+/* Variants: posisi awal sebelum muncul */
+.sr-fade-up    { transform: translateY(48px); }
+.sr-fade-down  { transform: translateY(-48px); }
+.sr-fade-left  { transform: translateX(-56px); }
+.sr-fade-right { transform: translateX(56px); }
+.sr-zoom-in    { transform: scale(0.85); }
+.sr-zoom-up    { transform: scale(0.9) translateY(32px); }
+
+/* State REVEALED: semua jadi normal */
+.sr-hidden.revealed {
+  opacity: 1;
+  transform: none !important;
+}
+
+/* Delay helpers */
+.sr-delay-100 { transition-delay: 100ms; }
+.sr-delay-150 { transition-delay: 150ms; }
+.sr-delay-200 { transition-delay: 200ms; }
+.sr-delay-300 { transition-delay: 300ms; }
+.sr-delay-400 { transition-delay: 400ms; }
+.sr-delay-500 { transition-delay: 500ms; }
+.sr-delay-600 { transition-delay: 600ms; }
+.sr-delay-700 { transition-delay: 700ms; }
+.sr-delay-800 { transition-delay: 800ms; }
+
+/* ===========================
+   FLOATING TECH ICONS (Hero)
+=========================== */
+@keyframes organic-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-12px) rotate(2deg); }
+  66%       { transform: translateY(-6px) rotate(-1deg); }
+}
+.animate-organic-float {
+  animation: organic-float 6s ease-in-out infinite;
+}
+
+/* ===========================
+   MODAL FADE IN
+=========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97) translateY(8px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
