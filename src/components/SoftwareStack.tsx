@@ -127,8 +127,8 @@ const SoftwareStack = () => {
 
         const el = elementsRef.current[i];
         if (el) {
-          // Terapkan translasi dan rotasi
-          el.style.transform = `translate(${item.x}px, ${item.y}px) rotate(${item.rot}deg)`;
+          // Terapkan translasi 3d dan rotasi untuk performa lebih mulus (GPU Accelerated)
+          el.style.transform = `translate3d(${item.x}px, ${item.y}px, 0) rotate(${item.rot}deg)`;
           
           // Counter-rotate the inner content so text stays readable
           const innerEl = el.firstElementChild as HTMLElement;

@@ -110,6 +110,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
                   />
                 ) : (

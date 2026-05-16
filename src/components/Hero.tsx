@@ -58,10 +58,10 @@ const Hero = () => {
       {/* 2. Grid Pattern with Fade out mask */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] z-[-1] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
-      {/* 3. Animated Glowing Orbs (Mesh Gradient Effect) */}
-      <div className="absolute top-0 -left-10 md:left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-amber-300/30 dark:bg-amber-500/10 rounded-full blur-[80px] sm:blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob z-[-1] pointer-events-none"></div>
-      <div className="absolute top-1/4 -right-10 md:right-1/4 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-orange-300/30 dark:bg-orange-600/10 rounded-full blur-[80px] sm:blur-[120px] mix-blend-multiply dark:mix-blend-screen animate-blob animation-delay-2000 z-[-1] pointer-events-none"></div>
-      <div className="absolute -bottom-20 left-1/3 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] bg-blue-300/30 dark:bg-blue-600/10 rounded-full blur-[80px] sm:blur-[100px] mix-blend-multiply dark:mix-blend-screen animate-blob animation-delay-4000 z-[-1] pointer-events-none"></div>
+      {/* 3. Animated Glowing Orbs (Mesh Gradient Effect) - Optimized without mix-blend-mode for better performance */}
+      <div className="absolute top-0 -left-10 md:left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-amber-400/20 dark:bg-amber-500/10 rounded-full blur-[60px] sm:blur-[100px] animate-blob z-[-1] pointer-events-none"></div>
+      <div className="absolute top-1/4 -right-10 md:right-1/4 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-orange-400/20 dark:bg-orange-600/10 rounded-full blur-[60px] sm:blur-[100px] animate-blob animation-delay-2000 z-[-1] pointer-events-none"></div>
+      <div className="absolute -bottom-20 left-1/3 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] bg-blue-400/20 dark:bg-blue-600/10 rounded-full blur-[60px] sm:blur-[90px] animate-blob animation-delay-4000 z-[-1] pointer-events-none"></div>
       {/* ------------------------------- */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
