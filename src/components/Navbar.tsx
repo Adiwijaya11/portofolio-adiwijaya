@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* Container utama berupa Pill (Kapsul) melayang */}
       <div className={`relative flex items-center justify-between transition-all duration-500 w-[92%] sm:w-[85%] max-w-5xl px-4 sm:px-6 py-3 sm:py-3.5 rounded-full ${
         scrolled 
-        ? 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] border border-slate-200/50 dark:border-slate-700/50' 
+        ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.5)] border border-slate-200/50 dark:border-slate-700/50' 
         : 'bg-transparent border border-transparent'
       }`}>
         
@@ -96,9 +96,9 @@ const Navbar = () => {
           </div>
         </button>
 
-        {/* Mobile Menu Dropdown Panel (Premium Card) */}
-        <div className={`absolute top-full right-0 mt-4 w-64 bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl rounded-3xl border border-slate-200/50 dark:border-slate-700/50 shadow-2xl transition-all duration-400 origin-top-right md:hidden ${
-          isMobileMenuOpen ? 'scale-100 opacity-100 visible' : 'scale-90 opacity-0 invisible'
+        {/* Mobile Menu Dropdown Panel (Premium Card) - Optimized with lower blur for mobile performance */}
+        <div className={`absolute top-full right-0 mt-4 w-64 bg-white/98 dark:bg-slate-900/98 backdrop-blur-lg rounded-3xl border border-slate-200/50 dark:border-slate-700/50 shadow-2xl transition-all duration-300 origin-top-right md:hidden ${
+          isMobileMenuOpen ? 'scale-100 opacity-100 visible' : 'scale-95 opacity-0 invisible'
         }`}>
           <div className="p-3 flex flex-col gap-1">
             {navLinks.map((link) => (
