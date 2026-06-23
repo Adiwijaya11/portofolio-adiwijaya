@@ -38,7 +38,7 @@ const certificates: Certificate[] = [
     title: 'DevOps Engineer Workshop',
     category: 'DevOps / Infrastructure',
     issuer: 'dibimbing.id',
-    filePath: 'sertifikat/internal/sertivikat partisipasi dalaam event oonline devops engineer dari dibimbing.pdf',
+    filePath: 'sertifikat/internal/sertifikat-devops-dibimbing.pdf',
     fileType: 'pdf',
     description: 'Workshop intensif yang membahas dasar-dasar DevOps, CI/CD pipeline, kontainerisasi, serta infrastruktur cloud modern.',
     tags: ['DevOps', 'CI/CD', 'Cloud Infrastructure']
