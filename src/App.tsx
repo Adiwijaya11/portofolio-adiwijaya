@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Certificates from './components/Certificates'
 import Projects from './components/Projects'
 import SoftwareStack from './components/SoftwareStack'
 import Footer from './components/Footer'
@@ -19,6 +20,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <About />
+        <Certificates />
         <Projects />
         <SoftwareStack />
       </main>
