@@ -59,7 +59,7 @@ const certificates: Certificate[] = [
     title: 'Youth Goals Singapore, Malaysia & Thailand',
     category: 'Leadership & International',
     issuer: 'Youth Goals International',
-    filePath: 'sertifikat/exsternal/sertifikat berpartisipasi di internal youth goals singapore malaysya dan thailand batch.jpeg',
+    filePath: 'sertifikat/exsternal/sertifikat-youth-goals-asean.jpeg',
     fileType: 'image',
     description: 'Program kepemimpinan pemuda tingkat internasional yang mencakup kunjungan studi, forum diskusi, dan kolaborasi lintas budaya di tiga negara ASEAN.',
     tags: ['Leadership', 'ASEAN Study', 'Global Mindset']
