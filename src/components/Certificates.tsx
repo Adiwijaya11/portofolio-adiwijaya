@@ -28,7 +28,7 @@ const certificates: Certificate[] = [
     title: 'Kelas Dasar & Penggunaan Generatif AI',
     category: 'Artificial Intelligence',
     issuer: 'AI Opportunity Fund Asia Pacific (Codepolitan)',
-    filePath: 'sertifikat/internal/sertifikat lulus kelas dasar dan penggunaan generatif ai dari ai oppotunity fund asia pasific (codepoliton).pdf',
+    filePath: 'sertifikat/internal/sertifikat-generatif-ai-codepoliton.pdf',
     fileType: 'pdf',
     description: 'Program sertifikasi penguasaan konsep dasar dan pemanfaatan praktis Generative AI dalam skenario kehidupan nyata dan pekerjaan profesional.',
     tags: ['Generative AI', 'AI Opportunity', 'Codepolitan']
